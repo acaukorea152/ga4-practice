@@ -1,77 +1,64 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>HappyDog</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawpetea | 우리 아이 건강을 위한 천연 펫티백</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="hero">
+    <header class="navbar">
+        <div class="logo">Pawpetea</div>
+        <nav>
+            <a href="#features">제품 특징</a>
+            <a href="#reviews">고객 후기</a>
+        </nav>
+        <a href="#apply-form" class="cta-btn mini" id="nav-cta">무료 샘플 신청</a>
+    </header>
 
-<h1>HappyDog</h1>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>자발적 음수량 200% 증가,<br>유기농 펫티백으로 시작하세요</h1>
+            <p>억지로 먹이지 마세요. 스스로 마시는 건강한 한 잔, Pawpetea</p>
+            <a href="#apply-form" class="cta-btn large" id="hero-cta">3초만에 무료 샘플 신청하기</a>
+        </div>
+    </section>
 
-<p>
-강아지를 위한 건강한 라이프스타일
-</p>
+    <section id="features" class="features-section">
+        <h2>왜 Pawpetea 일까요?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>💧 확실한 음수량 개선</h3>
+                <p>천연 북어와 닭가슴살 베이스로 맹물을 싫어하는 아이들도 찹찹 잘 마십니다.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🌿 100% 유기농 원료</h3>
+                <p>인공 첨가물 제로, 사람이 먹을 수 있는 휴먼그레이드 원료만 담았습니다.</p>
+            </div>
+        </div>
+    </section>
 
-<button id="ctaBtn">
-무료 체험 신청
-</button>
+    <section id="apply-form" class="apply-section">
+        <h2>무료 체험단 신청하기</h2>
+        <p>선착순 100명에게만 드리는 특별한 기회</p>
+        
+        <form id="lead-form">
+            <div class="form-group">
+                <input type="text" id="pet-name" placeholder="반려동물 이름" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" placeholder="연락처 (- 제외)" required>
+            </div>
+            <button type="submit" class="submit-btn" id="form-submit">샘플 키트 무료로 받기</button>
+        </form>
+    </section>
 
-</header>
+    <footer>
+        <p>&copy; 2026 Pawpetea Corp. All rights reserved.</p>
+    </footer>
 
-<section class="feature">
-
-<h2>왜 HappyDog일까요?</h2>
-
-<div class="cards">
-
-<div class="card">
-🐶
-<h3>천연 원료</h3>
-<p>안전한 원료만 사용합니다.</p>
-</div>
-
-<div class="card">
-💧
-<h3>높은 기호성</h3>
-<p>물을 더 맛있게 마셔요.</p>
-</div>
-
-<div class="card">
-❤️
-<h3>수의사 추천</h3>
-<p>전문가와 함께 개발했습니다.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="newsletter">
-
-<h2>무료 체험 신청</h2>
-
-<input
-type="email"
-placeholder="이메일을 입력하세요">
-
-<button id="submitBtn">
-
-신청하기
-
-</button>
-
-</section>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
